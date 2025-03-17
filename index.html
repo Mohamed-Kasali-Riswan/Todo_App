@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <!-- left Box -->
+      <div id="left" style="margin-left: 30px">
+        <div id="addTodoBox" style="padding-top: 0">
+          <h1 style="margin-top: 0; margin-bottom: 0; font-size: xx-large   ;">PlanIt</h1>
+          <br>
+          <div style="margin-top: 0">
+            <h4 style="text-align: start; margin-bottom: 10px">
+              Enter Task Name
+            </h4>
+            <input
+              type="text"
+              name="newTodo"
+              id="todoInputBox"
+              placeholder="  Enter a valid Todo"
+            />
+          </div>
+          <br>
+          <div style="width: 100%; margin-left: 180px; " id="catBox" >
+            <h4 style="text-align: start; margin-bottom: 10px">
+              Select the Category
+            </h4>
+            <select name="Category" id="Category" >
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Urgent">Urgent</option>
+            </select>
+            <br />
+          </div>
+          <br />
+          <br>
+          <div id="buttons">
+            <button id="addButton" onclick="addTask()"><a>Add Task 📝</a></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- right Box -->
+      <div id="right">
+        <img src="emptyy.PNG" alt="NO TASKS" style="width: 100%; height: 700px;">
+      </div>
+    </div> 
+  </body>
+</html>
